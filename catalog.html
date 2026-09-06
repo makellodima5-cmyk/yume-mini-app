@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>YUME — Каталог</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Логотип (без уведомлений) -->
+    <img src="assets/logos/logo-main.png" alt="YUME" class="logo-main" style="margin-top:8px;">
+
+    <!-- Заголовки -->
+    <h1 class="page-title">Каталог</h1>
+    <p class="page-subtitle">Все аниме</p>
+
+    <!-- Поиск + фильтры -->
+    <div class="search-bar">
+        <input type="text" class="search-input" placeholder="Поиск по названиям, жанрам, коду…">
+        <button class="filter-btn">⚙️</button>
+    </div>
+
+    <!-- Сортировка + переключатель вида -->
+    <div class="catalog-controls">
+        <div class="sort-dropdown">
+            <button class="sort-btn">По популярности ▼</button>
+        </div>
+        <div class="view-toggle">
+            <button class="view-btn active" id="grid-view">▦</button>
+            <button class="view-btn" id="list-view">☰</button>
+        </div>
+    </div>
+
+    <!-- Сетка каталога -->
+    <div class="catalog-grid" id="catalog-grid">
+        <!-- Карточки будут подгружаться из JS -->
+    </div>
+
+    <!-- Нижняя навигация -->
+    <div class="bottom-nav">
+        <button class="nav-item" onclick="location.href='index.html'">
+            <span class="nav-icon">🏠</span>Главная
+        </button>
+        <button class="nav-item" onclick="location.href='search.html'">
+            <span class="nav-icon">🔍</span>Поиск
+        </button>
+        <button class="nav-item active">
+            <span class="nav-icon">📚</span>Каталог
+        </button>
+        <button class="nav-item" onclick="location.href='profile.html'">
+            <span class="nav-icon">👤</span>Профиль
+        </button>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/catalog.js"></script>
+</body>
+</html>
