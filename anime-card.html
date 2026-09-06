@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>YUME — Карточка аниме</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Верхняя панель -->
+    <div class="card-top-bar">
+        <button class="back-btn" onclick="history.back()">←</button>
+        <img src="assets/logos/logo-main.png" alt="YUME" class="card-logo">
+        <div class="card-actions">
+            <button class="fav-btn">♡</button>
+            <button class="share-btn">↻</button>
+        </div>
+    </div>
+
+    <!-- Баннер 16:9 -->
+    <div class="anime-banner">
+        <img src="assets/posters/banner-placeholder.jpg" alt="Banner">
+        <div class="trailer-overlay">
+            <button class="trailer-btn">▶</button>
+            <span>Смотреть трейлер</span>
+        </div>
+    </div>
+
+    <!-- Названия -->
+    <h2 class="anime-title-rus">Твоё имя</h2>
+    <p class="anime-title-orig">Kimi no Na wa</p>
+
+    <!-- Инфо -->
+    <div class="anime-info-row">
+        <span class="info-rating">⭐ 8.8</span>
+        <span class="info-year">2016</span>
+        <span class="info-type">Фильм</span>
+        <span class="info-status">Завершено</span>
+    </div>
+
+    <!-- Жанры -->
+    <div class="info-section">
+        <span class="info-label">Жанры</span>
+        <div class="genre-chips">
+            <span class="chip">Романтика</span>
+            <span class="chip">Драма</span>
+            <span class="chip">Фэнтези</span>
+        </div>
+    </div>
+
+    <!-- Студия -->
+    <div class="info-section">
+        <span class="info-label">Студия</span>
+        <p class="info-text">CoMix Wave Films</p>
+    </div>
+
+    <!-- Озвучка -->
+    <div class="info-section">
+        <span class="info-label">Озвучка</span>
+        <div class="dubbing-chips">
+            <span class="chip active">Дубляж</span>
+            <span class="chip">Субтитры</span>
+        </div>
+    </div>
+
+    <!-- Описание -->
+    <div class="info-section">
+        <span class="info-label">Описание</span>
+        <p class="description-text" id="description">
+            История о двух подростках, которые внезапно начинают меняться телами...
+            <span class="read-more">...читать далее</span>
+        </p>
+    </div>
+
+    <!-- Кнопки -->
+    <button class="watch-btn" onclick="location.href='player.html'">▶ Смотреть</button>
+    <button class="episodes-btn" onclick="location.href='all-episodes.html'">☷ Все серии</button>
+
+    <!-- Нижняя навигация -->
+    <div class="bottom-nav">
+        <button class="nav-item" onclick="location.href='index.html'">
+            <span class="nav-icon">🏠</span>Главная
+        </button>
+        <button class="nav-item" onclick="location.href='search.html'">
+            <span class="nav-icon">🔍</span>Поиск
+        </button>
+        <button class="nav-item" onclick="location.href='catalog.html'">
+            <span class="nav-icon">📚</span>Каталог
+        </button>
+        <button class="nav-item" onclick="location.href='profile.html'">
+            <span class="nav-icon">👤</span>Профиль
+        </button>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/anime-card.js"></script>
+</body>
+</html>
