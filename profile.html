@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>YUME — Профиль</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Баннер профиля -->
+    <img src="assets/banners/profile-banner.png" alt="Profile Banner" class="profile-banner">
+
+    <!-- Аватар и никнейм -->
+    <div class="profile-avatar">
+        <img src="https://via.placeholder.com/80" alt="Avatar" class="avatar-img">
+    </div>
+    <p class="profile-name">YumeUser</p>
+
+    <!-- Статистика -->
+    <div class="profile-stats">
+        <div class="stat-item">
+            <span class="stat-number">0</span>
+            <span class="stat-label">В избранном</span>
+        </div>
+        <div class="stat-divider">|</div>
+        <div class="stat-item">
+            <span class="stat-number">0</span>
+            <span class="stat-label">Просмотрено</span>
+        </div>
+        <div class="stat-divider">|</div>
+        <div class="stat-item">
+            <span class="stat-number">1</span>
+            <span class="stat-label">Дней с нами</span>
+        </div>
+    </div>
+
+    <!-- Моё избранное -->
+    <div class="menu-item" onclick="location.href='favorites.html'">
+        <span class="menu-icon">♡</span>
+        <div>
+            <div class="menu-title">Моё избранное</div>
+            <div class="menu-sub">Аниме, которые ты добавил в избранное</div>
+        </div>
+    </div>
+
+    <!-- История просмотра -->
+    <div class="menu-item" onclick="location.href='history.html'">
+        <span class="menu-icon">◷</span>
+        <div>
+            <div class="menu-title">История просмотра</div>
+            <div class="menu-sub">Твои просмотренные аниме</div>
+        </div>
+    </div>
+
+    <!-- Уведомления -->
+    <div class="menu-item" style="opacity:0.5;">
+        <span class="menu-icon">♧</span>
+        <div>
+            <div class="menu-title">Уведомления <span class="badge-dev">В разработке</span></div>
+            <div class="menu-sub">Уведомления о новых сериях (скоро будет доступно)</div>
+        </div>
+    </div>
+
+    <!-- Помощь -->
+    <div class="menu-item" onclick="location.href='help.html'">
+        <span class="menu-icon">?</span>
+        <div>
+            <div class="menu-title">Помощь</div>
+            <div class="menu-sub">Ответы на частые вопросы</div>
+        </div>
+    </div>
+
+    <!-- О приложении -->
+    <div class="menu-item" style="opacity:0.7; cursor:default;">
+        <span class="menu-icon">ⓘ</span>
+        <div>
+            <div class="menu-title">О приложении</div>
+            <div class="menu-sub">Версия 1.0.0</div>
+        </div>
+    </div>
+
+    <!-- Нижняя навигация -->
+    <div class="bottom-nav">
+        <button class="nav-item" onclick="location.href='index.html'">
+            <span class="nav-icon">🏠</span>Главная
+        </button>
+        <button class="nav-item" onclick="location.href='search.html'">
+            <span class="nav-icon">🔍</span>Поиск
+        </button>
+        <button class="nav-item" onclick="location.href='catalog.html'">
+            <span class="nav-icon">📚</span>Каталог
+        </button>
+        <button class="nav-item active">
+            <span class="nav-icon">👤</span>Профиль
+        </button>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>
