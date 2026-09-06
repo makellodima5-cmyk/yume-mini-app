@@ -152,3 +152,624 @@ body {
     display: block;
     margin-bottom: 2px;
 }
+/* Дополнительные стили для всех страниц */
+
+/* Поиск */
+.page-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.search-bar {
+    display: flex;
+    gap: 8px;
+    margin: 12px 0 20px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1px solid #2a2a3a;
+    background: #12121a;
+    color: white;
+    font-size: 16px;
+}
+
+.search-input::placeholder {
+    color: #666;
+}
+
+.filter-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    padding: 0 8px;
+}
+
+.popular-queries {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 8px 0 16px;
+}
+
+.query-tag {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #2a2a3a;
+    font-size: 14px;
+    background: transparent;
+    color: white;
+}
+
+.results-count {
+    font-size: 14px;
+    color: #888;
+}
+
+/* Каталог */
+.page-subtitle {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.catalog-controls {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+
+.sort-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 14px;
+    padding: 6px 0;
+}
+
+.view-toggle {
+    display: flex;
+    gap: 4px;
+}
+
+.view-btn {
+    background: none;
+    border: none;
+    color: #666;
+    font-size: 20px;
+    padding: 4px 8px;
+}
+
+.view-btn.active {
+    color: var(--yume-purple);
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 12px 0;
+}
+
+.catalog-item {
+    background: #1a1a24;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.catalog-item img {
+    width: 100%;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+}
+
+.catalog-item-title {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 8px 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.catalog-item-meta {
+    font-size: 11px;
+    color: #888;
+    padding: 0 8px 4px;
+}
+
+.catalog-item-rating {
+    font-size: 12px;
+    padding: 0 8px 8px;
+    color: #fbbf24;
+}
+
+/* Профиль */
+.profile-banner {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: -40px;
+}
+
+.profile-avatar {
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.avatar-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid var(--yume-purple);
+}
+
+.profile-name {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: #888;
+}
+
+.stat-divider {
+    color: #2a2a3a;
+    font-size: 18px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #1a1a24;
+    cursor: pointer;
+}
+
+.menu-icon {
+    font-size: 24px;
+    width: 36px;
+    text-align: center;
+}
+
+.menu-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.menu-sub {
+    font-size: 13px;
+    color: #888;
+}
+
+.badge-dev {
+    font-size: 10px;
+    background: #2a2a3a;
+    padding: 2px 8px;
+    border-radius: 12px;
+    color: #888;
+    margin-left: 6px;
+}
+
+/* Карточка аниме */
+.card-top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0 12px;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 4px;
+}
+
+.card-logo {
+    height: 28px;
+}
+
+.card-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.fav-btn, .share-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    padding: 4px;
+}
+
+.anime-banner {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.anime-banner img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.trailer-overlay {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0,0,0,0.6);
+    padding: 6px 16px 6px 6px;
+    border-radius: 30px;
+    backdrop-filter: blur(4px);
+}
+
+.trailer-btn {
+    background: none;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    color: white;
+    font-size: 16px;
+}
+
+.trailer-overlay span {
+    font-size: 13px;
+    color: white;
+}
+
+.anime-title-rus {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.anime-title-orig {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.anime-info-row {
+    display: flex;
+    gap: 12px;
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 12px;
+}
+
+.info-rating {
+    color: #fbbf24;
+}
+
+.info-section {
+    margin: 12px 0;
+}
+
+.info-label {
+    display: block;
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 4px;
+}
+
+.genre-chips, .dubbing-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.chip {
+    padding: 4px 12px;
+    border-radius: 16px;
+    border: 1px solid #2a2a3a;
+    font-size: 13px;
+}
+
+.chip.active {
+    border-color: var(--yume-purple);
+    background: rgba(139, 92, 246, 0.15);
+    color: var(--yume-purple);
+}
+
+.info-text {
+    font-size: 15px;
+}
+
+.description-text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+.read-more {
+    color: var(--yume-purple);
+    cursor: pointer;
+}
+
+.watch-btn {
+    width: 100%;
+    padding: 14px;
+    background: var(--yume-purple);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+.episodes-btn {
+    width: 100%;
+    padding: 14px;
+    background: transparent;
+    border: 1px solid #2a2a3a;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+/* Все серии */
+.episodes-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.episode-info-block {
+    display: flex;
+    gap: 12px;
+    margin: 8px 0 12px;
+}
+
+.episode-poster {
+    width: 80px;
+    aspect-ratio: 2/3;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.episode-info-right h3 {
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.episode-info-right .orig-title {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 4px;
+}
+
+.episode-meta {
+    display: flex;
+    gap: 8px;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.episode-description {
+    font-size: 13px;
+    color: #ccc;
+    line-height: 1.4;
+    margin: 8px 0 12px;
+}
+
+.tab-switcher {
+    display: flex;
+    gap: 0;
+    margin: 12px 0;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #2a2a3a;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    color: #888;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.tab-btn.active {
+    background: var(--yume-purple);
+    color: white;
+}
+
+.episode-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid #1a1a24;
+}
+
+.play-ep-btn {
+    background: none;
+    border: 2px solid #2a2a3a;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    color: white;
+    font-size: 12px;
+}
+
+.episode-title {
+    font-size: 14px;
+}
+
+.episode-duration {
+    font-size: 12px;
+    color: #888;
+}
+
+/* Плеер */
+.player-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0 2px;
+}
+
+.player-anime-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.player-episode-title {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 12px;
+    padding-left: 4px;
+}
+
+.video-container {
+    background: #000;
+    border-radius: 16px;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.video-placeholder {
+    width: 100%;
+    height: 100%;
+    background: #0a0a0f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.video-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.ctrl-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px;
+}
+
+.play-btn {
+    font-size: 32px;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 80%;
+}
+
+.current-time, .total-time {
+    font-size: 12px;
+    color: #888;
+}
+
+.progress-track {
+    flex: 1;
+    height: 4px;
+    background: #2a2a3a;
+    border-radius: 2px;
+    position: relative;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--yume-purple);
+    border-radius: 2px;
+    width: 52%;
+}
+
+.player-controls {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin: 8px 0;
+}
+
+.quality-btn, .subs-btn, .fullscreen-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 14px;
+    padding: 4px 8px;
+}
+
+.player-episode-info {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 12px 0;
+}
+
+.episode-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 12px 0 20px;
+}
+
+.nav-prev, .nav-next {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 12px;
+}
+
+.nav-divider {
+    color: #2a2a3a;
+    font-size: 18px;
+}
+
+.player-logo {
+    display: block;
+    margin: 16px auto 30px;
+    max-width: 100px;
+}
