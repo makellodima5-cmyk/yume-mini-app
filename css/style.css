@@ -1,0 +1,154 @@
+/* YUME GLOBAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a0a0f;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 16px 16px 80px 16px;
+    min-height: 100vh;
+}
+
+/* Brand Color */
+:root {
+    --yume-purple: #8B5CF6;
+    --yume-purple-dark: #7C3AED;
+    --yume-bg: #0a0a0f;
+}
+
+/* Logo */
+.logo-main {
+    display: block;
+    max-width: 140px;
+    margin: 0 auto 4px;
+}
+
+.tagline {
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 20px;
+}
+
+/* Notifications */
+.notification-btn {
+    float: right;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    padding: 4px;
+}
+
+/* Sections */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 12px;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.section-all {
+    font-size: 14px;
+    color: var(--yume-purple);
+    text-decoration: none;
+}
+
+/* Cards horizontal scroll */
+.card-scroll {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    scrollbar-width: none;
+}
+
+.card-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.anime-card {
+    flex: 0 0 140px;
+    background: #1a1a24;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.anime-card img {
+    width: 100%;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+}
+
+/* Random button */
+.random-btn {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    background: transparent;
+    border: 2px solid var(--yume-purple);
+    border-radius: 16px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin: 12px 0 20px;
+    transition: 0.3s;
+}
+
+.random-btn:hover {
+    background: var(--yume-purple);
+}
+
+/* Banner */
+.banner-main {
+    width: 100%;
+    border-radius: 16px;
+    margin: 16px 0;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #12121a;
+    border-top: 1px solid #2a2a3a;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0 8px;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.nav-item {
+    background: none;
+    border: none;
+    color: #666;
+    font-size: 12px;
+    text-align: center;
+    padding: 4px 12px;
+    transition: 0.3s;
+}
+
+.nav-item.active {
+    color: var(--yume-purple);
+}
+
+.nav-icon {
+    font-size: 22px;
+    display: block;
+    margin-bottom: 2px;
+}
